@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La console - présentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Monoton&display=swap&Noto+Sans+Mono&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+    <h1>La console</h1>
+
+    <div class="buttons">
+        <div data-id="classic">Les classiques</div>
+        <div data-id="string">String Interpolation</div>
+        <div data-id="groups">Les groupes</div>
+        <div data-id="time">Le temps</div>
+        <div data-id="count"> 1 + 1</div>
+        <div data-id="trace">Trace</div>
+        <div data-id="table">Excel</div>
+        <div data-id="table-filter">Filtrer Excel</div>
+    </div>
+    <div class="result">
+
+        <div class="classic">
+            <p>console.log('Je suis un log !');</p>
+            <p>console.info('Je suis une info !');</p>
+            <p>console.warn('Je suis un warning !');</p>
+            <p>console.error('Je suis une erreur !');</p>
+        </div>
+
+        <div class="string">
+            <p>console.log('Je suis une %s !', 'STRING');</p>
+            <p>console.log('Je suis un entier %d !', 2);</p>
+            <p>console.log('Je suis un objet %O !', bu);</p>
+            <p>console.log('Je suis un élément HTML %o !', document.querySelectorAll('.buttons>div:first-child'));</p>
+        </div>
+
+        <div class="groups">
+            <p>console.group('Je suis un groupe !');</p>
+            <p>console.info('Et moi un sous groupe !');</p>
+            <p>console.info('Et moi un sous groupe !');</p>
+            <p>console.info('Et moi un sous groupe !');</p>
+            <p>console.info('Et moi un sous groupe !');</p>
+            <p>console.groupEnd();</p>
+            <p>console.error('Et moi un non :/ ');</p>
+        </div>
+
+        <div class="time">
+            <p>console.time('Durée');</p>
+            <p>for (i=0; i < 1e5; i++){</p>
+            <p>//Code...</p>
+            <p>}</p>
+            <p>console.timeEnd('Durée');</p>
+        </div>
+
+        <div class="count">
+            <p>for (i=0; i < 10; i++){</p>
+            <p>console.count('Nb de boucles :');</p>
+            <p>}</p>
+        </div>
+
+        <div class="trace">
+            <p>console.trace('Je genère une slacktrace :');</p>
+            <p>console.error('Un peu comme moi finalement !');</p>
+        </div>
+
+        <div class="table">
+            <p>console.table(bu);</p>
+        </div>
+
+        <div class="table-filter">
+            <p>console.table(bu, ['Nom']);</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: #020509;
+    color: aquamarine;
+    font-family: Major Mono Display;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons > div {
+    border: solid 1px aquamarine;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result{
+    margin-top: 5%;
+    margin-left: 1%;
+    text-align: left;
+    font-family: "Noto Sans Mono";
+}
